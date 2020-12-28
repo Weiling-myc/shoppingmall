@@ -23,6 +23,9 @@ import com.bjfu.entity.pojo.ResultBean;
  * @author bjfu
  * @2019年10月7日下午10:20:10
  */
+
+
+
 @ControllerAdvice
 public class GlobalExceptionHandler implements Serializable{
 	private static final long serialVersionUID = 1L;
