@@ -7,8 +7,6 @@ import java.io.Serializable;
 import java.util.Date;
 /**
  * 产品
- * @author bjfu
- * @2019年10月7日下午10:27:06
  */
 @Entity
 @JsonIgnoreProperties({ "handler","hibernateLazyInitializer" })

@@ -19,8 +19,6 @@ import java.util.HashMap;
 
 /**
  * 权限拦截器
- * @author bjfu
- * @2019年10月7日下午10:27:36
  */
 @WebFilter
 public class AuthorizationFilter implements Filter {

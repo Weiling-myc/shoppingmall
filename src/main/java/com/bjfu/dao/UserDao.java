@@ -7,8 +7,7 @@ import com.bjfu.entity.User;
 import java.util.List;
 /**
  * 用户数据层
- * @author bjfu
- * @2019年10月7日下午10:20:44
+
  */
 public interface UserDao extends JpaRepository<User, Integer> {
 	/**

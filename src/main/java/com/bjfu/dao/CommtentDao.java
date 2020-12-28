@@ -8,8 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.bjfu.entity.Comment;
 /**
  * 评论数据层
- * @author bjfu
- * @2019年10月7日下午10:23:20
  */
 public interface CommtentDao extends JpaRepository<Comment, Integer> {
 	/**

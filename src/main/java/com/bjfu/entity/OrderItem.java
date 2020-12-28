@@ -5,8 +5,6 @@ import java.io.Serializable;
 
 /**
  * 订单项
- * @author bjfu
- * @2019年10月7日下午10:26:58
  */
 @Entity
 public class OrderItem implements Serializable {

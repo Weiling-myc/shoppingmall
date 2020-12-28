@@ -7,8 +7,6 @@ import com.bjfu.entity.OrderItem;
 import java.util.List;
 /**
  * 订单数据层
- * @author bjfu
- * @2019年10月7日下午10:21:31
  */
 public interface OrderItemDao extends JpaRepository<OrderItem, Integer> {
 	/**

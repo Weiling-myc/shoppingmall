@@ -11,8 +11,6 @@ import org.springframework.data.jpa.repository.Query;
 import com.bjfu.entity.Order;
 /**
  * 订单数据层
- * @author bjfu
- * @2019年10月7日下午10:23:34
  */
 public interface OrderDao extends JpaRepository<Order, Integer> {
 

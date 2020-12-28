@@ -18,8 +18,6 @@ import com.bjfu.service.ProductService;
 import com.bjfu.service.ShopCartService;
 
 /**
- * @author hfb
- * @date 2019-10-09
  */
 @Service
 public class ShopCartServiceImpl implements ShopCartService {

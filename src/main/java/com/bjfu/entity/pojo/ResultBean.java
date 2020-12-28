@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 /**
  * 接口返回数据模型
- * @author bjfu
- * @2019年10月7日下午10:24:47
  * @param <T>
  */
 public class ResultBean<T> implements Serializable {
