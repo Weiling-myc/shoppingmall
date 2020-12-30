@@ -2266,3 +2266,22 @@ Attempted reconnect 3 times. Giving up.
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
 2020-12-30 18:59:02.747 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
 2020-12-30 18:59:03.382 [http-nio-8080-exec-10] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-12-30 19:09:07.571 [restartedMain] INFO  com.bjfu.MallApplication - Starting MallApplication on MYCdeMacBook-Air.local with PID 9678 (/Users/myc/Desktop/practice/shoppingmall/target/classes started by myc in /Users/myc/Desktop/practice/shoppingmall)
+2020-12-30 19:09:07.574 [restartedMain] DEBUG com.bjfu.MallApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2020-12-30 19:09:07.574 [restartedMain] INFO  com.bjfu.MallApplication - No active profile set, falling back to default profiles: default
+2020-12-30 19:09:08.650 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-30 19:09:08.651 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-12-30 19:09:08.708 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-12-30 19:09:09.717 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-30 19:09:09.811 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+2020-12-30 19:09:09.812 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-12-30 19:09:09.815 [restartedMain] INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2020-12-30 19:09:09.877 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.bjfu.entity.Comment (class must be instantiated by Interceptor)
+2020-12-30 19:09:09.904 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2020-12-30 19:09:12.562 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-30 19:09:12.563 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-12-30 19:09:12.563 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-12-30 19:09:12.568 [restartedMain] INFO  com.bjfu.MallApplication - Started MallApplication in 5.112 seconds (JVM running for 627.235)
+2020-12-30 19:09:12.739 [Thread-44] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
