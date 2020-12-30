@@ -41,6 +41,11 @@ public class UserController {
         return "mall/user/login";
     }
 
+    @RequestMapping("/toinformation.html")
+    public String toinformation() {
+        return "mall/user/information";
+    }
+
     /**
      * 登录
      *
@@ -85,7 +90,22 @@ public class UserController {
         // 注册完成后重定向到登录页面
         response.sendRedirect("/mall/user/toLogin.html");
     }
-
+    @RequestMapping("/updateinfo.do")
+    public void updateinfo(String username,
+                         String name,
+                         String phone,
+                         String email,
+                         String addr,
+                         HttpServletResponse response,HttpServletRequest request) throws IOException {
+        User user =(User)request.getSession().getAttribute("user");
+        user.setUsername(username);
+        user.setPhone(phone);
+        user.setName(name);
+        user.setEmail(email);
+        user.setAddr(addr);
+        userService.update(user);
+       response.sendRedirect("/mall/user/toinformation.html");
+    }
     /**
      * 登出
      */
