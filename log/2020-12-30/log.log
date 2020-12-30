@@ -2285,3 +2285,9 @@ Attempted reconnect 3 times. Giving up.
 2020-12-30 19:09:12.563 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
 2020-12-30 19:09:12.568 [restartedMain] INFO  com.bjfu.MallApplication - Started MallApplication in 5.112 seconds (JVM running for 627.235)
 2020-12-30 19:09:12.739 [Thread-44] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+2020-12-30 20:40:14.093 [restartedMain] INFO  com.bjfu.MallApplication - Starting MallApplication on MYCdeMacBook-Air.local with PID 10472 (/Users/myc/Desktop/practice/shoppingmall/target/classes started by myc in /Users/myc/Desktop/practice/shoppingmall)
+2020-12-30 20:40:14.094 [restartedMain] DEBUG com.bjfu.MallApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2020-12-30 20:40:14.094 [restartedMain] INFO  com.bjfu.MallApplication - No active profile set, falling back to default profiles: default
+2020-12-30 20:40:16.241 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-30 20:40:16.242 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-12-30 20:40:16.266 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
