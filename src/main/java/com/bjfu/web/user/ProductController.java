@@ -68,6 +68,8 @@ public class ProductController {
 		Product product = productService.findById(id);
 		map.put("product", product);
 		return "mall/product/info";
+
+
 	}
 
 	/**

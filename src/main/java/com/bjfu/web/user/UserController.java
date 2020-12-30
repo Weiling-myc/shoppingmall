@@ -105,6 +105,8 @@ public class UserController {
         user.setAddr(addr);
         userService.update(user);
        response.sendRedirect("/mall/user/toinformation.html");
+
+
     }
     /**
      * 登出
