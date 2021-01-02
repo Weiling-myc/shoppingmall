@@ -46,6 +46,8 @@ public class OrderItem implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+
+
 	public OrderItem(Integer id, Integer orderId, Integer productId, Integer count, Double subTotal) {
 		this.id = id;
 		this.orderId = orderId;
