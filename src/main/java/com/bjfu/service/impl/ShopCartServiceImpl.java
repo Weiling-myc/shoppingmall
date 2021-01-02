@@ -28,7 +28,7 @@ public class ShopCartServiceImpl implements ShopCartService {
 
 	/**
 	 * 加购物车
-	 * 将商品id保存到Session中List<Integer>中
+	 * 将封装成CartItem类型的商品保存到Session中List<CartItem>中
 	 *
 	 * @param cartItem
 	 * @param request
@@ -51,7 +51,7 @@ public class ShopCartServiceImpl implements ShopCartService {
 	/**
 	 * 移除
 	 *
-	 * 移除session List中对应的商品Id
+	 * 移除session List中对应CartItem类型的商品
 	 *
 	 * @param cartItem
 	 * @param request
@@ -74,7 +74,7 @@ public class ShopCartServiceImpl implements ShopCartService {
 	/**
 	 * 查看购物车
 	 *
-	 * 查询出session的List中所有的商品Id,并封装成List<OrderItem>返回
+	 * 查询出session的List中所有的商品,并封装成List<OrderItem>返回
 	 *
 	 * @param request
 	 * @return
