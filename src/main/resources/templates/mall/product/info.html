@@ -34,11 +34,12 @@
             font-size: 30px;
         }
         .product_info>.price{
-            font-weight: 500;
-            color: #1e1e1e;
+            float: left;
+            width: 60px;
+            color: #6c6c6c;
         }
         .size2{
-            font-size: 24px;
+            font-size:18px;
         }
         .product_info>p>.price1{
             font-weight: bold;
@@ -47,6 +48,76 @@
         .size3{
             font-size: 30px;
         }
+        .product_info>.price_div{
+            padding: 10px;
+            background-color: #FFF2E8;
+        }
+
+        product_info>.amount{
+            float: left;
+            width: 60px;
+            color: #6c6c6c;
+            padding: 20px;
+        }
+        product_info>.amount_div{
+           margin: 20px;
+            padding: 20px;
+            background-color: #FFF2E8;
+        }
+
+        .btn-numbox {
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .btn-numbox li {
+            float: left;
+        }
+
+        .btn-numbox li .number,
+        .stock {
+            display: inline-block;
+            font-size: 12px;
+            color: #808080;
+            vertical-align: sub;
+        }
+
+        .btn-numbox .count {
+            overflow: hidden;
+            margin: 0 16px 0 -20px;
+        }
+
+        .btn-numbox .count .Amount{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            cursor: pointer;
+            border: 1px solid #e6e6e6;
+        }
+        .btn-numbox .count .input-num {
+            width: 58px;
+            height: 26px;
+            color: #333;
+            border-left: 0;
+            border-right: 0;
+        }
+        .product_info>.product_description{
+            display: inline-block;
+            font-size: 12px;
+            color: #808080;
+            vertical-align: sub;
+        }
+       .delprice{
+           text-decoration:line-through;
+       }
+        .size4{
+            font-size: 22px;
+        }
+
     </style>
 </head>
 <body class="site-home">
@@ -60,16 +131,58 @@
                 <img class="product_img img_responsive" th:src="${product.image}" />
             </div>
             <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+
                 <div class="product_info">
                     <input type="hidden" id="productId" th:value="${product.id}"/>
                     <p th:text="${product.title}" class="title size1"></p>
-                    <hr class="layui-bg-red" />
-                    <p class="price size2">商城价：<span class="price1 size3" th:text="${product.shopPrice}"></span></p>
-                    <hr class="layui-bg-red" />
-                    <p class="price size2">市场价：<span class="" th:text="${product.marketPrice}"></span></p>
-                    <hr class="layui-bg-red" />
-                    <p ><button onclick="addCart()" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-danger">加入购物车</button></p>
+                    <div class="product_description">
+                        <h3 th:text="${product.desc}" ></h3>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="price_div">
+                        <br/>
+                        <p class="price">市场价：<span class="size4">￥</span><span class="delprice size4" th:text="${product.marketPrice}"></span></p>
+                        <br/>
+                        <p class="price">商城价：<span class="price1 size3">￥</span><span class="price1 size3" th:text="${product.shopPrice}"></span></p>
+                        <br/>
+                    </div>
+
+                    <ul class="btn-numbox">
+                        <li><span class="number">数量&nbsp;</span></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li>
+                          <ul class="count">
+                            <li><button onclick="minusAmount()" type="button" class="Amount">
+                                -
+                            </button></li>
+                            <li><input id="number" type="text" class="Amount" maxlength="3" value="1"/></li>
+                            <li><button onclick="addAmount()" type="button" class="Amount">
+                                +
+                            </button></li>
+                          </ul>
+                        </li>
+                        <li><span class="stock">件&nbsp;&nbsp;&nbsp;库存:<span id="stock">120件</span></span></li>
+                    </ul>
+
+                    <br/>
+                    <br/>
+                    <ur class="btn-numbox">
+                        <li><span class="number">购买方式&nbsp;</span></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><button onclick="purchase()" type="button" class="layui-btn layui-btn-primary">
+                            全额付款
+                        </button></li>
+                    </ur>
+
+                    <br/>
+                    <br/>
+                    <p>
+                        <button onclick="addCart()" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-danger">加入购物车</button>
+                    </p>
+
                 </div>
+
             </div>
         </div>
         <div class="layui-row" style="margin-top: 50px;text-align: left;">
@@ -88,15 +201,40 @@
     
     
     <script>
-        //        <![CDATA[
+        //商品数量减
+        function minusAmount() {
+            var val =$("#number").val();
+            if (val > 0) {
+                $("#number").val(parseInt(val) - 1);
+            }
+        }
+        //商品数量加
+        function addAmount() {
+            var val = $("#number").val();
+            $("#number").val(parseInt(val) + 1);
+        }
+        
+        //购买方式
+        function purchase() {
+
+        }
+
+        // 加入购物车       <![CDATA[
         function addCart() {
+            //商品Id
             var productId = $("#productId").val();
             if(!productId){
-                layer.msg("错误！");
+                layer.msg("错误!");
+                return;
+            }
+            //商品数量
+            var productAmount=$("#number").val();
+            if(productAmount<1){
+                layer.msg("加入商品量为空!")
                 return;
             }
 
-            $.get("addCart.do?productId="+productId,function (data) {
+            $.get("addCart.do?productId="+productId+"&productAmount="+productAmount,function (data) {
                 if (data.state==0){
                     layer.msg("添加购物车成功！");
                 }else {

@@ -8,8 +8,6 @@ import java.io.Serializable;
 
 /**
  * 分类
- * @author bjfu
- * @2019年10月7日下午10:26:31
  */
 @Entity
 public class Classification implements Serializable {

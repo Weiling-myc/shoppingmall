@@ -10,8 +10,6 @@ import org.springframework.data.jpa.repository.Query;
 import com.bjfu.entity.Product;
 /**
  * 产品展示数据层
- * @author bjfu
- * @2019年10月7日下午10:21:17
  */
 public interface ProductDao extends JpaRepository<Product, Integer> {
 	/**

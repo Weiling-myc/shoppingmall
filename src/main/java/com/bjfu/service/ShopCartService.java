@@ -2,6 +2,7 @@ package com.bjfu.service;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.bjfu.entity.CartItem;
 import com.bjfu.entity.OrderItem;
 
 import java.util.List;
@@ -17,14 +18,14 @@ public interface ShopCartService {
      * 加购物车
      * @param
      */
-    void addCart(int productId, HttpServletRequest request) throws Exception;
+    void addCart(CartItem cartItem, HttpServletRequest request) throws Exception;
 
     /**
      * 移除
-     * @param productId
+     * @param cartItem
      * @param request
      */
-    void remove(int productId, HttpServletRequest request) throws Exception;
+    void remove(CartItem cartItem, HttpServletRequest request) throws Exception;
 
     /**
      * 查看购物车

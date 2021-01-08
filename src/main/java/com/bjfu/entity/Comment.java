@@ -13,8 +13,6 @@ import javax.persistence.Table;
 
 /**
  * 评论实体类
- * @author bjfu
- * @2019年10月7日下午10:26:42
  */
 @Entity
 @Table(name = "`comment`")
