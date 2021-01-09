@@ -23,6 +23,8 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 	 */
 	List<Product> findByCsid(int csid, Pageable pageable);
 
+	List<Product> findByCsid(int csid);
+
 	List<Product> findByCsidIn(List<Integer> csids,Pageable pageable);
 
 	/**
@@ -57,4 +59,6 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 	 */
 	@Query(value = "SELECT * FROM (SELECT  * FROM product ORDER BY pdate DESC limit 0,24) a /*#pageable*/",nativeQuery = true)
 	List<Product> findNew(Pageable pageable);
+
+	List<Product> findByTitle(String title);
 }

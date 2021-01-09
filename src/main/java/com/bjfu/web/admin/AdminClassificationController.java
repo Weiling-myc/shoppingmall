@@ -118,7 +118,7 @@ public class AdminClassificationController {
         if (pageindex == -1)
             list = classificationService.findAll(type);
         else {
-            Pageable pageable = new PageRequest(pageindex, pageSize, null);
+            Pageable pageable = PageRequest.of(pageindex, pageSize, null);
             list = classificationService.findAll(type, pageable).getContent();
         }
         return new ResultBean<>(list);
@@ -127,7 +127,7 @@ public class AdminClassificationController {
     @ResponseBody
     @RequestMapping("/getTotal.do")
     public ResultBean<Integer> getTotal(int type) {
-        Pageable pageable = new PageRequest(1, 15, null);
+        Pageable pageable = PageRequest.of(1, 15, null);
         int count = (int) classificationService.findAll(type, pageable).getTotalElements();
         return new ResultBean<>(count);
     }

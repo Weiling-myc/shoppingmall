@@ -63,7 +63,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void delById(int id) {
-        orderDao.delete(id);
+        orderDao.deleteById(id);
     }
 
     /**
@@ -75,7 +75,7 @@ public class OrderServiceImpl implements OrderService {
     public List<OrderItem> findItems(int orderId) {
         List<OrderItem> list = orderItemDao.findByOrderId(orderId);
         for (OrderItem orderItem : list) {
-            Product product = productDao.findOne(orderItem.getProductId());
+            Product product = productDao.findById(orderItem.getProductId()).get();
             orderItem.setProduct(product);
         }
         return list;
@@ -89,7 +89,7 @@ public class OrderServiceImpl implements OrderService {
      */
     @Override
     public void updateStatus(int id, int status) {
-        Order order = orderDao.findOne(id);
+        Order order = orderDao.findById(id).get();
         order.setState(status);
         orderDao.save(order);
     }
@@ -119,7 +119,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void pay(int orderId) {
         //具体逻辑就不实现了，直接更改状态为 待发货
-        Order order = orderDao.findOne(orderId);
+        Order order = orderDao.findById(orderId).get();
         if (order == null)
             throw new RuntimeException("订单不存在");
         orderDao.updateState(STATE_WAITE_SEND,order.getId());
@@ -170,7 +170,7 @@ public class OrderServiceImpl implements OrderService {
      */
     @Override
     public void receive(int orderId) {
-        Order order = orderDao.findOne(orderId);
+        Order order = orderDao.findById(orderId).get();
         if (order == null)
             throw new RuntimeException("订单不存在");
         orderDao.updateState(STATE_COMPLETE,order.getId());

@@ -53,6 +53,7 @@ public interface ProductService {
 	 */
 	List<Product> findByCsid(int csid,Pageable pageable);
 
+	List<Product> findByCsid(int csid);
 	/**
 	 * 更新
 	 *
@@ -76,5 +77,7 @@ public interface ProductService {
 	 * @return
 	 */
 	void delById(int id);
+
+	List<Product> findByTitle(String title);
 
 }

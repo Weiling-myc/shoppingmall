@@ -2,6 +2,8 @@ package com.bjfu.web.admin;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
@@ -28,7 +30,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/admin/product")
-public class AdminProductController {
+public class AdminProductController{
     @Autowired
     private ProductService productService;
     @Autowired
@@ -57,7 +59,7 @@ public class AdminProductController {
     @RequestMapping("/list.do")
     public ResultBean<List<Product>> listProduct(int pageindex,
                                                  @RequestParam(value = "pageSize", defaultValue = "15") int pageSize) {
-        Pageable pageable = new PageRequest(pageindex, pageSize, null);
+        Pageable pageable = PageRequest.of(pageindex, pageSize, null);
         List<Product> list = productService.findAll(pageable).getContent();
         return new ResultBean<>(list);
     }
@@ -65,7 +67,7 @@ public class AdminProductController {
     @ResponseBody
     @RequestMapping("/getTotal")
     public ResultBean<Integer> getTotal() {
-        Pageable pageable = new PageRequest(1, 15, null);
+        Pageable pageable = PageRequest.of(1, 15, null);
         int total = (int) productService.findAll(pageable).getTotalElements();
         return new ResultBean<>(total);
     }
@@ -154,6 +156,4 @@ public class AdminProductController {
             Files.copy(Paths.get(file.toURI()), res.getOutputStream());
         }
     }
-
-
 }

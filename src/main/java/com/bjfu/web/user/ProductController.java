@@ -39,7 +39,7 @@ public class ProductController {
 	@ResponseBody
 	@RequestMapping("/getTotal.do")
 	public ResultBean<Integer> geTotal() {
-		Pageable pageable = new PageRequest(1, 15, null);
+		Pageable pageable = PageRequest.of(1, 15, null);
 		int total = (int) commtentService.findAll(pageable).getTotalElements();
 		return new ResultBean<>(total);
 	}
@@ -92,7 +92,7 @@ public class ProductController {
 	@ResponseBody
 	@RequestMapping("/new.do")
 	public ResultBean<List<Product>> getNewProduct(int pageNo, int pageSize) {
-		Pageable pageable = new PageRequest(pageNo, pageSize);
+		Pageable pageable = PageRequest.of(pageNo, pageSize);
 		List<Product> products = productService.findNewProduct(pageable);
 		return new ResultBean<>(products);
 	}
@@ -125,7 +125,7 @@ public class ProductController {
 	@ResponseBody
 	@RequestMapping("/category.do")
 	public ResultBean<List<Product>> getCategoryProduct(int cid, int pageNo, int pageSize) {
-		Pageable pageable = new PageRequest(pageNo, pageSize);
+		Pageable pageable = PageRequest.of(pageNo, pageSize);
 		List<Product> products = productService.findByCid(cid, pageable);
 		return new ResultBean<>(products);
 	}
@@ -141,7 +141,7 @@ public class ProductController {
 	@ResponseBody
 	@RequestMapping("/categorySec.do")
 	public ResultBean<List<Product>> getCategorySecProduct(int csId, int pageNo, int pageSize) {
-		Pageable pageable = new PageRequest(pageNo, pageSize);
+		Pageable pageable = PageRequest.of(pageNo, pageSize);
 		List<Product> products = productService.findByCsid(csId, pageable);
 		return new ResultBean<>(products);
 	}

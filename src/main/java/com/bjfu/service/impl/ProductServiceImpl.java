@@ -85,6 +85,10 @@ public class ProductServiceImpl implements ProductService {
 		 return productDao.findByCsid(csid,pageable);
 	 }
 
+	@Override
+	public List<Product> findByCsid(int csid){
+	 	return productDao.findByCsid(csid);
+	}
 
 	 @Override
 	 public void update(Product product) {
@@ -98,6 +102,11 @@ public class ProductServiceImpl implements ProductService {
 
 	 @Override
 	 public void delById(int id) {
-		 productDao.delete(id);
+		 productDao.deleteById(id);
+	 }
+
+	 @Override
+	 public List<Product> findByTitle(String title) {
+	 	return productDao.findByTitle(title);
 	 }
 }

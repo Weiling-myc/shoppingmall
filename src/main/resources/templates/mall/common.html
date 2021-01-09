@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Title</title>
+    <script th:src="@{/js/js-dependency.js}"></script>
 </head>
 <body>
 <!--
@@ -20,13 +21,14 @@
         //        ]]>
     </script>
     <div class="layui-main">
-        <a class="logo" href="/mall/index.html">
-            <img th:src="@{/image/logn.png}"/>
-        </a>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <!--<ul class="layui-nav layui-layout-left">-->
         <!---->
         <!--</ul>-->
+        <a class="logo" href="/mall/index.html">
+            <img th:src="@{/image/logo.jpeg}"/>
+
+        </a>
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item" style="color:#393D49;">
                 <a href="javascript:;">分类</a>

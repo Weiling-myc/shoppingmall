@@ -1,0 +1,147 @@
+.all-sort-list {
+    position: relative;
+    border-top: none;
+    background: #FFF;
+    height: 100%;
+    width: 150px;
+}
+
+.all-sort-list .item {
+    height: 49px;
+    border-top: 1px solid #CCC;
+    width: 150px;
+}
+
+.all-sort-list .item h3 {
+    height: 30px;
+    font-size: 15px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.all-sort-list .item span {
+    padding: 0px 5px;
+    color: #1e88e5;
+    font-family: "\5B8B\4F53";
+}
+
+.all-sort-list .item a {
+    color: #444;
+    text-decoration: none;
+}
+
+.all-sort-list .item a:hover {
+    font-weight: bold;
+    color: #1e88e5;
+}
+
+.subitem{
+    display: none;
+    position: absolute;
+    min-height: 100px;
+    _height: 200px;
+    background: #FFF;
+    left: 150px;
+    box-shadow: 0px 0px 10px #DDDDDD;
+    border: 1px solid #DDD;
+    top: 3px;
+    z-index: 10;
+    float: left;
+    width: 200px;
+    padding: 3px 4px 0px 8px;
+    overflow: hidden;
+}
+
+.all-sort-list .subitem a{
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    padding: 0px 8px;
+    margin-top: 5px;
+    border-left: 1px solid #CCC;
+    color: #666;
+    text-decoration: none;
+}
+
+.subitem em a:hover{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#name-and-serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    top:1em;
+}
+#store-name{
+    position: relative;
+    padding: 0.8em 1.2em;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#store-name::before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 200px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom: 3em solid aqua;
+    border-right: 1em solid transparent;
+}
+#search-box-button{
+    border: 3px solid aqua;
+}
+#search-box{
+    font-size: large;
+    border: none;
+    width: 300px;
+}
+#search-button{
+    display: inline-block;
+    background-color: aqua;
+    color: white;
+    width: 80px;
+    text-align: center;
+    font-size: large;
+    border: none;
+}
+#trending{
+    color: #888888;
+    font-size: 16px;
+}
+#merchandise-menu{
+    width: 400px;
+}
+
+#phone-number{
+    display: table;
+    border: 1px solid #aaaaaa;
+    background-color: #dddddd;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+}
+
+#phone-number-innerbox{
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.fl{
+    float: right;
+}
+
+#menu-and-carousel{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    top:20px;
+}

@@ -1,7 +1,8 @@
 package com.bjfu.utils;
 
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
+import java.util.Base64;
+import java.util.Base64.Decoder;
+import java.util.Base64.Encoder;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -35,7 +36,8 @@ public class DesUtil {
 	 */
 	public static String encrypt(String data, String key) throws Exception {
 		byte[] bt = encrypt(data.getBytes(), key.getBytes());
-		String strs = new BASE64Encoder().encode(bt);
+		Encoder encoder=Base64.getEncoder();
+		String strs = encoder.encodeToString(bt);
 		return strs;
 	}
 
@@ -51,8 +53,8 @@ public class DesUtil {
 	Exception {
 		if (data == null)
 			return null;
-		BASE64Decoder decoder = new BASE64Decoder();
-		byte[] buf = decoder.decodeBuffer(data);
+		Decoder decoder=Base64.getDecoder();
+		byte[] buf = decoder.decode(data);
 		byte[] bt = decrypt(buf,key.getBytes());
 		return new String(bt);
 	}

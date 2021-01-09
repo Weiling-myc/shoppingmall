@@ -51,7 +51,7 @@ public class AdminUserController {
     @RequestMapping("/list.do")
     public ResultBean<List<User>> findAllUser(int pageindex,
                                               @RequestParam(value = "pageSize", defaultValue = "15") int pageSize) {
-        Pageable pageable = new PageRequest(pageindex, pageSize, null);
+        Pageable pageable = PageRequest.of(pageindex, pageSize, null);
         List<User> users = userService.findAll(pageable).getContent();
         return new ResultBean<>(users);
     }
@@ -59,7 +59,7 @@ public class AdminUserController {
     @ResponseBody
     @RequestMapping("/getTotal.do")
     public ResultBean<Integer> geTotal() {
-        Pageable pageable = new PageRequest(1, 15, null);
+        Pageable pageable = PageRequest.of(1, 15, null);
         int total = (int) userService.findAll(pageable).getTotalElements();
         return new ResultBean<>(total);
     }

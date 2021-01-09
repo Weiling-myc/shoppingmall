@@ -47,7 +47,7 @@ public class AdminUserServiceImpl implements AdminUserService {
 
     @Override
     public void delById(int id) {
-        adminUserDao.delete(id);
+        adminUserDao.deleteById(id);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.bjfu.service.impl;
 
+import com.bjfu.entity.vo.MerchandiseMenuVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -56,7 +57,7 @@ public class ClassificationServiceImpl implements ClassificationService {
 
     @Override
     public void delById(int id) {
-        classificationDao.delete(id);
+        classificationDao.deleteById(id);
     }
 
     /**
