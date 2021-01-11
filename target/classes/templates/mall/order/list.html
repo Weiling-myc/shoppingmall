@@ -130,7 +130,7 @@
                     $(data.data).each(function (index, item) {
                         var tr = $("<tr style='max-height: 200px;'></tr>");
                         tr.append($("<td ><img class='img_responsive' src='" + item.product.image + "'/></td>"));
-                        // tr.append($("<td style='text-align: left;width: 200px;'><a style='color: #01AAED;text-decoration: underline;' href='/mall/product/get.html?id="+item.productId+"'>" + item.product.title + "</a></td>"));
+                        tr.append($("<td style='text-align: left;width: 200px;'><a style='color: #01AAED;text-decoration: underline;' href='/mall/product/get.html?id="+item.productId+"'>" + item.product.title + "</a></td>"));
                         tr.append($("<td>单价：" + item.product.shopPrice + "</td>"));
                         tr.append($("<td>数量：" + item.count + "</td>"));
                         tr.append($("<td>总价：￥" + item.subTotal + "</td>"));
