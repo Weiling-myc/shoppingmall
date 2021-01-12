@@ -1,21 +1,18 @@
 package com.bjfu.web.admin;
 
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
 import com.bjfu.entity.Classification;
 import com.bjfu.entity.Product;
 import com.bjfu.entity.pojo.ResultBean;
 import com.bjfu.service.ClassificationService;
 import com.bjfu.service.ProductService;
 import com.bjfu.utils.FileUtil;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,7 +27,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/admin/product")
-public class AdminProductController{
+public class AdminProductController {
     @Autowired
     private ProductService productService;
     @Autowired

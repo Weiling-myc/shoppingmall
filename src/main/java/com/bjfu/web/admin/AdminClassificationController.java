@@ -1,5 +1,8 @@
 package com.bjfu.web.admin;
 
+import com.bjfu.entity.Classification;
+import com.bjfu.entity.pojo.ResultBean;
+import com.bjfu.service.ClassificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -8,10 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.bjfu.entity.Classification;
-import com.bjfu.entity.pojo.ResultBean;
-import com.bjfu.service.ClassificationService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,7 +73,7 @@ public class AdminClassificationController {
         } else if (type == 2) {// 二级分类页面
             Classification classification1 = classificationService.findById(classification.getParentId());
             map.put("cate", classification1);
-            map.put("catese",classification);
+            map.put("catese", classification);
             return "admin/categorysec/edit";
         } else {
             return "";

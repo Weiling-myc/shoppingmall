@@ -1,14 +1,13 @@
 package com.bjfu.web.user;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.bjfu.entity.Order;
 import com.bjfu.entity.OrderItem;
 import com.bjfu.entity.pojo.ResultBean;
 import com.bjfu.service.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -89,6 +88,7 @@ public class OrderController {
 
     /**
      * 确认收货
+     *
      * @param orderId
      * @param response
      * @return

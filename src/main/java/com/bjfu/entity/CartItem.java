@@ -1,6 +1,10 @@
 package com.bjfu.entity;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.io.Serializable;
+
 /**
  * TODO
  *
@@ -24,18 +28,17 @@ public class CartItem implements Serializable {
      */
     @Column
     private Integer count;
+
     /**
      * 总价
      */
-    public CartItem(Integer productId)
-    {
-        this.productId=productId;
+    public CartItem(Integer productId) {
+        this.productId = productId;
     }
 
-    public CartItem(Integer productId,Integer count)
-    {
-        this.productId=productId;
-        this.count=count;
+    public CartItem(Integer productId, Integer count) {
+        this.productId = productId;
+        this.count = count;
     }
 
     public Integer getId() {

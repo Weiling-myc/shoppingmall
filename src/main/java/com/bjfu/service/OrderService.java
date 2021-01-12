@@ -1,11 +1,10 @@
 package com.bjfu.service;
 
+import com.bjfu.entity.Order;
+import com.bjfu.entity.OrderItem;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import com.bjfu.entity.Order;
-import com.bjfu.entity.OrderItem;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -96,12 +95,14 @@ public interface OrderService {
 
     /**
      * 支付
+     *
      * @param orderId
      */
     void pay(int orderId);
 
     /**
      * 提交订单
+     *
      * @param name
      * @param phone
      * @param addr
@@ -112,6 +113,7 @@ public interface OrderService {
 
     /**
      * 确认收货
+     *
      * @param orderId
      */
     void receive(int orderId);

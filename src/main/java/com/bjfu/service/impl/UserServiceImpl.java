@@ -1,14 +1,13 @@
 package com.bjfu.service.impl;
 
+import com.bjfu.dao.UserDao;
+import com.bjfu.entity.User;
+import com.bjfu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import com.bjfu.dao.UserDao;
-import com.bjfu.entity.User;
-import com.bjfu.service.UserService;
 
 import java.util.List;
 

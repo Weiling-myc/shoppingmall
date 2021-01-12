@@ -1,14 +1,16 @@
 package com.bjfu.web.admin;
 
+import com.bjfu.entity.User;
+import com.bjfu.entity.pojo.ResultBean;
+import com.bjfu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-
-import com.bjfu.entity.User;
-import com.bjfu.entity.pojo.ResultBean;
-import com.bjfu.service.UserService;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 import java.util.Map;
@@ -21,6 +23,7 @@ public class AdminUserController {
 
     /**
      * 打开用户列表页面
+     *
      * @return
      */
     @RequestMapping("/toList.html")
@@ -30,6 +33,7 @@ public class AdminUserController {
 
     /**
      * 打开编辑页面
+     *
      * @param id
      * @param map
      * @return
@@ -73,9 +77,9 @@ public class AdminUserController {
 
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value = "/update.do")
-    public ResultBean<Boolean> update(int id,String username,
-                                      String password,String name,
-                                      String phone,String email,
+    public ResultBean<Boolean> update(int id, String username,
+                                      String password, String name,
+                                      String phone, String email,
                                       String addr) {
         // 更新前先查询
         User user = userService.findById(id);

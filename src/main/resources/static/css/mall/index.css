@@ -35,7 +35,7 @@
     color: #1e88e5;
 }
 
-.subitem{
+.subitem {
     display: none;
     position: absolute;
     min-height: 100px;
@@ -52,7 +52,7 @@
     overflow: hidden;
 }
 
-.all-sort-list .subitem a{
+.all-sort-list .subitem a {
     float: left;
     height: 14px;
     line-height: 14px;
@@ -63,30 +63,32 @@
     text-decoration: none;
 }
 
-.subitem em a:hover{
+.subitem em a:hover {
     font-weight: normal;
     text-decoration: underline;
 }
 
-#name-and-serch{
+#name-and-serch {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    top:1em;
+    top: 1em;
 }
-#store-name{
+
+#store-name {
     position: relative;
     padding: 0.8em 1.2em;
     font-size: 1.6em;
     font-weight: bold;
 }
-#store-name::before{
+
+#store-name::before {
     content: '';
     position: absolute;
     height: 0;
     width: 200px;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -94,15 +96,18 @@
     border-bottom: 3em solid #6fa6d9;
     border-right: 1em solid transparent;
 }
-#search-box-button{
+
+#search-box-button {
     border: 3px solid #6fa6d9;
 }
-#search-box{
+
+#search-box {
     font-size: large;
     border: none;
     width: 300px;
 }
-#search-button{
+
+#search-button {
     display: inline-block;
     background-color: #6fa6d9;
     color: white;
@@ -111,15 +116,25 @@
     font-size: large;
     border: none;
 }
-#trending{
-    color: #888888;
+
+#trending {
+    color: #777777;
     font-size: 16px;
 }
-#merchandise-menu{
+
+#trending > a:link {
+    color: #777777;
+}
+
+#trending > a:hover {
+    color: #bbbbbb;
+}
+
+#merchandise-menu {
     width: 400px;
 }
 
-#phone-number{
+#phone-number {
     display: table;
     border: 1px solid #aaaaaa;
     background-color: #dddddd;
@@ -128,22 +143,22 @@
     height: 30px;
 }
 
-#phone-number-innerbox{
+#phone-number-innerbox {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
 }
 
-.fl{
+.fl {
     float: right;
 }
 
-#menu-and-carousel{
+#menu-and-carousel {
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 500px;
-    top:20px;
+    top: 20px;
     margin-bottom: 50px;
 }
 

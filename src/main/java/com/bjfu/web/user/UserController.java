@@ -1,14 +1,13 @@
 package com.bjfu.web.user;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.bjfu.entity.User;
 import com.bjfu.entity.pojo.ResultBean;
 import com.bjfu.service.UserService;
 import com.bjfu.service.exception.LoginException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -90,24 +89,26 @@ public class UserController {
         // 注册完成后重定向到登录页面
         response.sendRedirect("/mall/user/toLogin.html");
     }
+
     @RequestMapping("/updateinfo.do")
     public void updateinfo(String username,
-                         String name,
-                         String phone,
-                         String email,
-                         String addr,
-                         HttpServletResponse response,HttpServletRequest request) throws IOException {
-        User user =(User)request.getSession().getAttribute("user");
+                           String name,
+                           String phone,
+                           String email,
+                           String addr,
+                           HttpServletResponse response, HttpServletRequest request) throws IOException {
+        User user = (User) request.getSession().getAttribute("user");
         user.setUsername(username);
         user.setPhone(phone);
         user.setName(name);
         user.setEmail(email);
         user.setAddr(addr);
         userService.update(user);
-       response.sendRedirect("/mall/user/toinformation.html");
+        response.sendRedirect("/mall/user/toinformation.html");
 
 
     }
+
     /**
      * 登出
      */
@@ -119,14 +120,15 @@ public class UserController {
 
     /**
      * 验证用户名是否唯一
+     *
      * @param username
      * @return
      */
     @ResponseBody
     @RequestMapping("/checkUsername.do")
-    public ResultBean<Boolean> checkUsername(String username){
+    public ResultBean<Boolean> checkUsername(String username) {
         List<User> users = userService.findByUsername(username);
-        if (users==null||users.isEmpty()){
+        if (users == null || users.isEmpty()) {
             return new ResultBean<>(true);
         }
         return new ResultBean<>(false);

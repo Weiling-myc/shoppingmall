@@ -6,31 +6,189 @@
   <component name="ChangeListManager">
     <list default="true" id="783205b7-f24e-4520-ac6e-97d23af1af50" name="Default Changelist" comment="Minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/15blj.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/15czs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/15hnt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/15jbc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/16lds.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/16qcqzj.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/16qdm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/21ct.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/21db.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/21pts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/22jcs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/22zbs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24bzj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24hl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24ljz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24mf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24tb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24y.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/24zt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2020-12-29/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2020-12-30/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2021-01-08/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2021-01-10/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2021-01-11/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bjfu/entity/CartItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/MallApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/MallApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/aspect/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/aspect/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/aspect/WebLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/aspect/WebLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/AdminUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/AdminUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/ClassificationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/ClassificationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/CommtentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/CommtentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/OrderItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/OrderItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/AdminUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/AdminUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Classification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Classification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/pojo/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/pojo/ResultBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/vo/CarouselItemVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/vo/CarouselItemVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/filter/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/filter/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/AdminUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/AdminUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/ClassificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/ClassificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/CommtentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/CommtentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/ShopCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/ShopCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/exception/LoginException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/exception/LoginException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/AdminUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/ClassificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/ClassificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/CommtentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/CommtentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/ShopCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/ShopCartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/utils/DesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/utils/DesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/utils/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminClassificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminClassificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/admin/AdminUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/DT_bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/DT_bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/about-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-fileupload.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-fileupload.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-tag.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-tag.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-toggle-buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-toggle-buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-tree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-wysihtml5.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-wysihtml5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/brown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/brown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/chosen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/chosen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/clockface.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/clockface.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/colorpicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/coming-soon.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/coming-soon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/daterangepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/dropzone.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/email.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/error.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/error.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fullcalendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/glyphicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/glyphicons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/grey.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/grey.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/halflings.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/halflings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/inbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/inbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/invoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/invoice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/jquery.fancybox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.fancybox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/jquery.fileupload-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.fileupload-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/jquery.gritter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.gritter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/jquery.nestable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.nestable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/jquery.tagsinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jquery.tagsinput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/jqvmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/jqvmap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/lock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/lock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login-soft.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login-soft.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/mall/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mall/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/multi-select-metro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/multi-select-metro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/pricing-tables.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/pricing-tables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/promo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/promo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/purple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/select2_metro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/select2_metro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style-metro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style-metro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style-non-responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style-non-responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style-responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style-responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/timepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/timepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/uniform.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/uniform.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/DT_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/DT_bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-fileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-modalmanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-modalmanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-timepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-timepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-wysihtml5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-wysihtml5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/breakpoints.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/breakpoints.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/clockface.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/clockface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/coming-soon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/coming-soon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/contact-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/contact-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/daterangepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/dropzone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/form-components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form-fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/form-fileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form-samples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/form-samples.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/form-validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/form-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/form-wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/gmaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/inbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/inbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.countdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.easy-pie-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.easy-pie-chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.fileupload-fp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.fileupload-fp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.fileupload-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.fileupload-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.fileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.crosshair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.crosshair.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.pie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.pie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.resize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.flot.stack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.gritter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.gritter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.iframe-transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.iframe-transport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.knob.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.knob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.multi-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.multi-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.toggle.buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.toggle.buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.ui.widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.ui.widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.europe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.europe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.germany.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.germany.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.russia.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.russia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.usa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.usa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.world.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.vmap.world.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.xdr-transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.xdr-transport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/js-dependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/js-dependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/lock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/lock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/login-soft.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/login-soft.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/mall/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/mall/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/maps-vector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/maps-vector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/table-advanced.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/table-advanced.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/table-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/table-editable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/table-managed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/table-managed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ui-general.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui-general.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ui-jqueryui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui-jqueryui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ui-modals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui-modals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ui-tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui-tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/wysihtml5-0.3.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/wysihtml5-0.3.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/font/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +245,15 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

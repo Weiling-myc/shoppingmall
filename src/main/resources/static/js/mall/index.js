@@ -32,7 +32,6 @@ $('.all-sort-list > .item').hover(function () {
 });
 
 
-
 var slideshowSwiper = new Swiper('.swiper-container', {
     autoplay: {
         delay: 2000,
@@ -48,15 +47,15 @@ var slideshowSwiper = new Swiper('.swiper-container', {
     }
 })
 
-const InputBinding={
-    data(){
-        return{
-            search_content:''
+const InputBinding = {
+    data() {
+        return {
+            search_content: ''
         }
     }
 }
 const vm = Vue.createApp(InputBinding).mount('#search-content-binding');
 
-function searchMerchandise(){
-    window.location.href="/mall/search?title="+vm.search_content;
+function searchMerchandise() {
+    window.location.href = "/mall/search?title=" + vm.search_content;
 }

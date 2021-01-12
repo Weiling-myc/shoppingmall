@@ -1,11 +1,9 @@
 package com.bjfu.service;
 
-import com.bjfu.entity.vo.MerchandiseMenuVO;
+import com.bjfu.entity.Classification;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import com.bjfu.entity.Classification;
 
 import java.util.List;
 
@@ -32,7 +30,7 @@ public interface ClassificationService {
      * @param pageable
      * @return
      */
-    Page<Classification> findAll(int type,Pageable pageable);
+    Page<Classification> findAll(int type, Pageable pageable);
 
     /**
      * 按条件查询
@@ -68,6 +66,7 @@ public interface ClassificationService {
 
     /**
      * 通过一级分类id查找它所有的二级分类
+     *
      * @param cid
      * @return
      */

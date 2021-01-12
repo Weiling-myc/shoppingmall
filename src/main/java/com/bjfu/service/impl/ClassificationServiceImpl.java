@@ -1,15 +1,13 @@
 package com.bjfu.service.impl;
 
-import com.bjfu.entity.vo.MerchandiseMenuVO;
+import com.bjfu.dao.ClassificationDao;
+import com.bjfu.entity.Classification;
+import com.bjfu.service.ClassificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import com.bjfu.dao.ClassificationDao;
-import com.bjfu.entity.Classification;
-import com.bjfu.service.ClassificationService;
 
 import java.util.List;
 

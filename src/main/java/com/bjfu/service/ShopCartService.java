@@ -1,10 +1,9 @@
 package com.bjfu.service;
 
-import javax.servlet.http.HttpServletRequest;
-
 import com.bjfu.entity.CartItem;
 import com.bjfu.entity.OrderItem;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -16,12 +15,14 @@ public interface ShopCartService {
 
     /**
      * 加购物车
+     *
      * @param
      */
     void addCart(CartItem cartItem, HttpServletRequest request) throws Exception;
 
     /**
      * 移除
+     *
      * @param cartItem
      * @param request
      */
@@ -29,6 +30,7 @@ public interface ShopCartService {
 
     /**
      * 查看购物车
+     *
      * @param request
      * @return
      */

@@ -64,16 +64,16 @@ var TableEditable = function () {
                     }
                 },
                 "aoColumnDefs": [{
-                        'bSortable': false,
-                        'aTargets': [0]
-                    }
+                    'bSortable': false,
+                    'aTargets': [0]
+                }
                 ]
             });
 
             jQuery('#sample_editable_1_wrapper .dataTables_filter input').addClass("m-wrap medium"); // modify table search input
             jQuery('#sample_editable_1_wrapper .dataTables_length select').addClass("m-wrap small"); // modify table per page dropdown
             jQuery('#sample_editable_1_wrapper .dataTables_length select').select2({
-                showSearchInput : false //hide search box with special css class
+                showSearchInput: false //hide search box with special css class
             }); // initialzie select2 dropdown
 
             var nEditing = null;
@@ -81,7 +81,7 @@ var TableEditable = function () {
             $('#sample_editable_1_new').click(function (e) {
                 e.preventDefault();
                 var aiNew = oTable.fnAddData(['', '', '', '',
-                        '<a class="edit" href="">Edit</a>', '<a class="cancel" data-mode="new" href="">Cancel</a>'
+                    '<a class="edit" href="">Edit</a>', '<a class="cancel" data-mode="new" href="">Cancel</a>'
                 ]);
                 var nRow = oTable.fnGetNodes(aiNew[0]);
                 editRow(oTable, nRow);

@@ -1,12 +1,5 @@
 package com.bjfu.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.bjfu.dao.OrderDao;
 import com.bjfu.dao.OrderItemDao;
 import com.bjfu.dao.ProductDao;
@@ -17,6 +10,12 @@ import com.bjfu.entity.User;
 import com.bjfu.service.OrderService;
 import com.bjfu.service.ShopCartService;
 import com.bjfu.service.exception.LoginException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -68,6 +67,7 @@ public class OrderServiceImpl implements OrderService {
 
     /**
      * 查询订单项详情
+     *
      * @param orderId
      * @return
      */
@@ -122,7 +122,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = orderDao.findById(orderId).get();
         if (order == null)
             throw new RuntimeException("订单不存在");
-        orderDao.updateState(STATE_WAITE_SEND,order.getId());
+        orderDao.updateState(STATE_WAITE_SEND, order.getId());
     }
 
     /**
@@ -173,6 +173,6 @@ public class OrderServiceImpl implements OrderService {
         Order order = orderDao.findById(orderId).get();
         if (order == null)
             throw new RuntimeException("订单不存在");
-        orderDao.updateState(STATE_COMPLETE,order.getId());
+        orderDao.updateState(STATE_COMPLETE, order.getId());
     }
 }

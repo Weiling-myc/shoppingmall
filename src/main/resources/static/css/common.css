@@ -1557,7 +1557,8 @@ body {
 #product_new, #product_hot {
     text-align: center;
 }
-#product_new{
+
+#product_new {
     margin-bottom: 50px;
 }
 
@@ -1597,7 +1598,8 @@ body {
     -webkit-box-orient: vertical;
     word-break: break-all; /* 追加这一行代码 */
 }
-.product_title>a{
+
+.product_title > a {
     color: #01AAED;
     text-decoration: underline;
 }
@@ -1611,6 +1613,7 @@ body {
     max-width: 100%;
     height: auto;
 }
-.smaller{
+
+.smaller {
     padding: 20px 300px;
 }

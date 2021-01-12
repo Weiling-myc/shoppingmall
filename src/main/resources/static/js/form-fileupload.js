@@ -23,22 +23,22 @@ var FormFileUpload = function () {
                 maxFileSize: 5000000,
                 acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,
                 process: [{
-                        action: 'load',
-                        fileTypes: /^image\/(gif|jpeg|png)$/,
-                        maxFileSize: 20000000 // 20MB
-                    }, {
-                        action: 'resize',
-                        maxWidth: 1440,
-                        maxHeight: 900
-                    }, {
-                        action: 'save'
-                    }
+                    action: 'load',
+                    fileTypes: /^image\/(gif|jpeg|png)$/,
+                    maxFileSize: 20000000 // 20MB
+                }, {
+                    action: 'resize',
+                    maxWidth: 1440,
+                    maxHeight: 900
+                }, {
+                    action: 'save'
+                }
                 ]
             }).done(function (result) {
                 $(this).fileupload('option', 'done')
                     .call(this, null, {
-                    result: result
-                });
+                        result: result
+                    });
             });
 
             // Upload server status check for browsers with CORS support:
@@ -49,7 +49,7 @@ var FormFileUpload = function () {
                 }).fail(function () {
                     $('<span class="alert alert-error"/>')
                         .text('Upload server currently unavailable - ' +
-                        new Date())
+                            new Date())
                         .appendTo('#fileupload');
                 });
             }

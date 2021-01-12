@@ -1,5 +1,9 @@
 package com.bjfu.web.admin;
 
+import com.bjfu.entity.Order;
+import com.bjfu.entity.OrderItem;
+import com.bjfu.entity.pojo.ResultBean;
+import com.bjfu.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -7,11 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.bjfu.entity.Order;
-import com.bjfu.entity.OrderItem;
-import com.bjfu.entity.pojo.ResultBean;
-import com.bjfu.service.OrderService;
 
 import java.util.List;
 
@@ -23,6 +22,7 @@ public class AdminOrderController {
 
     /**
      * 打开订单列表页面
+     *
      * @return
      */
     @RequestMapping("/toList.html")
@@ -32,6 +32,7 @@ public class AdminOrderController {
 
     /**
      * 获取所有订单的总数
+     *
      * @return
      */
     @ResponseBody
@@ -44,6 +45,7 @@ public class AdminOrderController {
 
     /**
      * 获取所有订单
+     *
      * @param pageindex
      * @param pageSize
      * @return
@@ -59,6 +61,7 @@ public class AdminOrderController {
 
     /**
      * 获取订单项
+     *
      * @param orderId
      * @return
      */
@@ -71,13 +74,14 @@ public class AdminOrderController {
 
     /**
      * 发货
+     *
      * @param id
      * @return
      */
     @ResponseBody
     @RequestMapping("/send.do")
     public ResultBean<Boolean> send(int id) {
-        orderService.updateStatus(id,3);
+        orderService.updateStatus(id, 3);
         return new ResultBean<>(true);
     }
 }

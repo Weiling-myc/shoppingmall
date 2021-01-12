@@ -1,10 +1,9 @@
 package com.bjfu.service;
 
+import com.bjfu.entity.AdminUser;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import com.bjfu.entity.AdminUser;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -60,11 +59,12 @@ public interface AdminUserService {
 
     /**
      * 检查登录
+     *
      * @param request
      * @param username
      * @param pwd
      * @return
      */
-    AdminUser checkLogin(HttpServletRequest request,String username, String pwd);
+    AdminUser checkLogin(HttpServletRequest request, String username, String pwd);
 
 }

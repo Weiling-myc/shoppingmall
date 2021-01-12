@@ -1,6 +1,9 @@
 package com.bjfu.entity.vo;
 
 public class CarouselItemVO {
+    String redirectUri;
+    String imgUri;
+
     public String getRedirectUri() {
         return redirectUri;
     }
@@ -16,7 +19,4 @@ public class CarouselItemVO {
     public void setImgUri(String imgUri) {
         this.imgUri = imgUri;
     }
-
-    String redirectUri;
-    String imgUri;
 }

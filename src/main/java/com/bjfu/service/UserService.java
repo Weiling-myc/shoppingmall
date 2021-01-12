@@ -1,10 +1,9 @@
 package com.bjfu.service;
 
+import com.bjfu.entity.User;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import com.bjfu.entity.User;
 
 import java.util.List;
 
@@ -59,6 +58,7 @@ public interface UserService {
 
     /**
      * 根据用户名查询
+     *
      * @param username
      * @return
      */
@@ -66,11 +66,12 @@ public interface UserService {
 
     /**
      * 检查登录
+     *
      * @param username
      * @param password
      * @return
      */
-    User checkLogin(String username,String password);
+    User checkLogin(String username, String password);
 
 
 }
