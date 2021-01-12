@@ -91,11 +91,11 @@
     left: 0;
     right: 0;
     z-index: -1;
-    border-bottom: 3em solid aqua;
+    border-bottom: 3em solid #6fa6d9;
     border-right: 1em solid transparent;
 }
 #search-box-button{
-    border: 3px solid aqua;
+    border: 3px solid #6fa6d9;
 }
 #search-box{
     font-size: large;
@@ -104,7 +104,7 @@
 }
 #search-button{
     display: inline-block;
-    background-color: aqua;
+    background-color: #6fa6d9;
     color: white;
     width: 80px;
     text-align: center;
@@ -144,4 +144,11 @@
     justify-content: space-between;
     height: 500px;
     top:20px;
+    margin-bottom: 50px;
+}
+
+.carousel-img {
+    object-fit: cover;
+    width: 990px;
+    height: 500px;
 }

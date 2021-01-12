@@ -31,6 +31,8 @@ $('.all-sort-list > .item').hover(function () {
     $(this).children('.subitem').css('display', 'none');
 });
 
+
+
 var slideshowSwiper = new Swiper('.swiper-container', {
     autoplay: {
         delay: 2000,

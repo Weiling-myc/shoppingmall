@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div id="menu-and-carousel">
+    <div id="menu-and-carousel" class="layui-row">
         <!--Merchandise Menu-->
         <div id="merchandise-menu">
             <div class="all-sort-list">
@@ -62,26 +62,24 @@
         </div>
         <div class="swiper-container fl">
             <div class="swiper-wrapper">
-                <!-- 配置了轮播图则显示后台配置的轮播图 -->
-                <th:block th:unless="${#lists.isEmpty(carousels)}">
-                    <th:block th:each="carousel : ${carousels}">
+                <th:block th:unless="${#lists.isEmpty(carouselItems)}">
+                    <th:block th:each="carouselItem : ${carouselItems}">
                         <div class="swiper-slide">
-                            <a th:href="@{${carousel.redirectUrl}}">
-                                <img th:src="@{${carousel.carouselUrl}}" alt="">
+                            <a th:href="@{${carouselItem.redirectUri}}">
+                                <img class="carousel-img" th:src="@{${carouselItem.imgUri}}" alt="">
                             </a>
                         </div>
                     </th:block>
                 </th:block>
-                <!-- 未配置轮播图则显示默认的三张轮播图 -->
-                <th:block th:if="${#lists.isEmpty(carousels)}">
+                <th:block th:if="${#lists.isEmpty(carouselItems)}">
                     <div class="swiper-slide">
-                        <img src="./image/carousel1.png" alt="">
+                        <img class="carousel-img" src="./image/carousel1.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./image/carousel2.png" alt="">
+                        <img class="carousel-img" src="./image/carousel2.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./image/carousel3.png" alt="">
+                        <img class="carousel-img" src="./image/carousel3.png" alt="">
                     </div>
                 </th:block>
             </div>

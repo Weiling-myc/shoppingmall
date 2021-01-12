@@ -2,6 +2,7 @@ package com.bjfu.web.user;
 
 import com.bjfu.entity.Classification;
 import com.bjfu.entity.Product;
+import com.bjfu.entity.vo.CarouselItemVO;
 import com.bjfu.service.ClassificationService;
 import com.bjfu.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,18 @@ public class IndexController {
 			category.setProducts(productService.findByCsid(category.getCategoryId()));
 			categories.add(category);
 		}
+		List<CarouselItemVO> carouselItems=new ArrayList<>();
+		carouselItems.add(new CarouselItemVO());
+		carouselItems.get(0).setRedirectUri("/product/get.html?id=14");
+		carouselItems.get(0).setImgUri("/admin/product/img/15hnt.jpg");
+		carouselItems.add(new CarouselItemVO());
+		carouselItems.get(1).setRedirectUri("/product/get.html?id=15");
+		carouselItems.get(1).setImgUri("/admin/product/img/15czs.png");
+		carouselItems.add(new CarouselItemVO());
+		carouselItems.get(2).setRedirectUri("/product/get.html?id=18");
+		carouselItems.get(2).setImgUri("/admin/product/img/15jbc.png");
 		request.setAttribute("categories", categories);
+		request.setAttribute("carouselItems",carouselItems);
 		return "mall/index";
 	}
 
