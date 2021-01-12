@@ -6,8 +6,6 @@ import java.util.Date;
 
 /**
  * 订单
- * @author bjfu
- * @2019年10月7日下午10:26:50
  */
 @Entity
 @Table(name = "`order`")

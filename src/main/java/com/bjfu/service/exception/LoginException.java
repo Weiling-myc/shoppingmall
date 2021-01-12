@@ -1,8 +1,6 @@
 package com.bjfu.service.exception;
 /**
  * 登入异常设置
- * @author bjfu
- * @2019年10月7日下午10:27:44
  */
 public class LoginException extends RuntimeException {
 	public LoginException() {

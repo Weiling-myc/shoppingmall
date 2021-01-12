@@ -1,5 +1,6 @@
 package com.bjfu.web.user;
 
+import com.bjfu.entity.CartItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -68,6 +69,8 @@ public class ProductController {
 		Product product = productService.findById(id);
 		map.put("product", product);
 		return "mall/product/info";
+
+
 	}
 
 	/**
@@ -162,13 +165,17 @@ public class ProductController {
 	 * 加购物车
 	 *
 	 * @param productId
+	 * @param productAmount
 	 * @param request
 	 * @return
 	 */
 	@ResponseBody
 	@RequestMapping("/addCart.do")
-	public ResultBean<Boolean> addToCart(int productId, HttpServletRequest request) throws Exception {
-		shopCartService.addCart(productId, request);
+	public ResultBean<Boolean> addToCart(Integer productId,Integer productAmount,HttpServletRequest request) throws Exception {
+
+		CartItem cartItem=new CartItem(productId,productAmount);
+
+		shopCartService.addCart(cartItem, request);
 		return new ResultBean<>(true);
 	}
 
@@ -182,7 +189,8 @@ public class ProductController {
 	@ResponseBody
 	@RequestMapping("/delCart.do")
 	public ResultBean<Boolean> delToCart(int productId, HttpServletRequest request) throws Exception {
-		shopCartService.remove(productId, request);
+		CartItem cartItem=new CartItem(productId);
+		shopCartService.remove(cartItem, request);
 		return new ResultBean<>(true);
 	}
 

@@ -5,8 +5,6 @@ import java.io.Serializable;
 
 /**
  * 订单项
- * @author bjfu
- * @2019年10月7日下午10:26:58
  */
 @Entity
 public class OrderItem implements Serializable {
@@ -47,6 +45,8 @@ public class OrderItem implements Serializable {
 	}
 
 	private static final long serialVersionUID = 1L;
+
+
 
 	public OrderItem(Integer id, Integer orderId, Integer productId, Integer count, Double subTotal) {
 		this.id = id;

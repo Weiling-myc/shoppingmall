@@ -7,8 +7,6 @@ import javax.persistence.Id;
 import java.io.Serializable;
 /**
  * 用户
- * @author bjfu
- * @2019年10月7日下午10:27:22
  */
 @Entity
 public class User implements Serializable {

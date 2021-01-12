@@ -56,10 +56,11 @@
                 <a href="javascript:;">
                     <i class="fa fa-user-circle"></i>&nbsp;
                     <span th:if="${session.user == null}">请登陆</span>
-                    <span th:if="${session.user != null}" th:text="'欢迎您!&nbsp;' + ${session.user.username}">请登陆</span>
+                    <span th:if="${session.user != null}" th:text="'欢迎您! ' + ${session.user.username}">请登陆</span>
                 </a>
                 <dl class="layui-nav-child">
                     <dd th:if="${session.user != null}"><a href="/mall/user/logout.do"><i class="fa fa-sign-out"></i> 退出登录</a></dd>
+                    <dd th:if="${session.user != null}"><a href="/mall/user/toinformation.html"><i class="fa fa-user-circle"></i> 个人信息</a></dd>
                     <dd th:if="${session.user != null}"><a href="/mall/order/toList.html"><i class="fa fa-list"></i> 我的订单</a></dd>
                     <dd th:if="${session.user != null}"><a href="/mall/product/toCart.html"><i class="fa fa-shopping-cart"></i> 购物车</a></dd>
                     <dd th:if="${session.user == null}"><a href="/mall/user/toLogin.html"><i class="fa fa-sign-in"></i> 登录</a></dd>
@@ -76,7 +77,7 @@
 <div class="footer footer-index" th:fragment="foot">
     <hr style="color: #c2c2c2;" />
     <!-- 底部固定区域 -->
-    © dmh 2019
+    © shoppingmall 2020
     <a href="/mall/admin/toLogin.html">后台管理系统</a>
 </div>
 

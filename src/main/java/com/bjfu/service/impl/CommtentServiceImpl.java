@@ -12,10 +12,6 @@ import com.bjfu.service.CommtentService;
 
 /**
 
- * @author 作者:Lambert-Shi
-
- * @version 创建时间：2019年10月4日 下午5:15:18
-
  * 类说明 :
 
  */

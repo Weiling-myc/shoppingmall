@@ -17,8 +17,6 @@ import java.util.Arrays;
 
 /**
  * WEB层日志切面,用来记录请求信息
- * @author bjfu
- * @2019年10月7日下午10:20:22
  */
 @Aspect
 @Order(5)

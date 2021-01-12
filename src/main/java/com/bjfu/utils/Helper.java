@@ -1,9 +1,5 @@
 package com.bjfu.utils;
 
-/**
- * @author hfb
- * @date 2019年10月7日下午10:20:22
- */
 public class Helper {
 	private static String key = "wow!@#$%";
 

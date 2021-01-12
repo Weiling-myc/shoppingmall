@@ -16,13 +16,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.bjfu.entity.pojo.ResultBean;
 
+
+
 /**
  * 统一异常处理
  * 在Controller中抛出的异常，GlobalExceptionHandler中定义的处理方法可以起作用
  * 其他的业务层异常也可以单独处理
- * @author bjfu
- * @2019年10月7日下午10:20:10
  */
+
+
 @ControllerAdvice
 public class GlobalExceptionHandler implements Serializable{
 	private static final long serialVersionUID = 1L;

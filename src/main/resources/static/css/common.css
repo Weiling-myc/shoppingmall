@@ -1564,7 +1564,7 @@ body {
 .product_image {
     text-align: center;
     margin-bottom: 10px;
-    /*height: 200px;*/
+    height: 200px;
 }
 
 .product_image > img {

@@ -13,8 +13,6 @@ import java.security.SecureRandom;
 
 /**
  * 加密解密工具类
- * @author hfb
- * @date 2019年10月7日下午10:20:22
  */
 public class DesUtil {
 	private final static String DES = "DES";

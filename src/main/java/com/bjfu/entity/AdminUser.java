@@ -6,8 +6,6 @@ import java.io.Serializable;
 
 /**
  * 管理员用户
- * @author bjfu
- * @2019年10月7日下午10:25:02
  */
 @Entity
 public class AdminUser implements Serializable {
