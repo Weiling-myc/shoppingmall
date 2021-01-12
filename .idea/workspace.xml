@@ -5,13 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="783205b7-f24e-4520-ac6e-97d23af1af50" name="Default Changelist" comment="Minor fixes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/entity/vo/CarouselItemVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjfu/web/user/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/mall/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mall/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/mall/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/mall/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/15blj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/15czs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/15hnt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/15jbc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/16lds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/16qcqzj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/16qdm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/21ct.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/21db.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/21pts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/22jcs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/22zbs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24bzj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24hl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24ljz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24mf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24tb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/24zt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2020-12-29/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2020-12-30/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2021-01-08/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2021-01-10/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2021-01-11/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/bjfu/entity/CartItem.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +87,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppingmall" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjfu.MallApplication" />
