@@ -148,7 +148,7 @@
         tbody.html("");
         for (var i = 0; i < data.length; i++) {
             var tr = $("<tr style='display:none;'></tr>");
-            tr.append($("<td></td>").text(data[i].id));
+            tr.append($("<td></td>").text(i+1));
             tr.append($("<td></td>").text(data[i].username));
             tr.append($("<td></td>").text(data[i].name));
             tr.append($("<td></td>")

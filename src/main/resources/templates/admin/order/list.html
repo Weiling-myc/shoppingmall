@@ -119,7 +119,7 @@
         tbody.html("");
         for (var i = 0; i < data.length; i++) {
             var tr = $("<tr style='display:none;'></tr>");
-            tr.append($("<td></td>").text(data[i].id));
+            tr.append($("<td></td>").text(i+1));
             tr.append($("<td></td>").text("￥" + data[i].total));
             tr.append($("<td></td>").text(data[i].name == null ? '' : data[i].name));
             var state = data[i].state;

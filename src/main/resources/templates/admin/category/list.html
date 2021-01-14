@@ -2,7 +2,7 @@
 <html lang='cn' xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>一级分类列表</title>
+    <title>分类列表</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
     <meta content="" name="description"/>
     <meta content="" name="author"/>
@@ -27,7 +27,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">一级分类</a>
+                <a href="#">分类列表</a>
             </li>
         </ul>
     </div>
@@ -36,7 +36,7 @@
             <div class="portlet-title">
                 <div class="caption">
                     <i class="fa fa-reorder"></i>
-                    一级分类列表
+                    分类列表
                 </div>
                 <div class="tools">
                     <button class="btn mini" onclick="window.location.href='toAdd.html?type=1';"><i
@@ -126,7 +126,7 @@
         tbody.html("");
         for (var i = 0; i < data.length; i++) {
             var tr = $("<tr style='display:none;'></tr>");
-            tr.append($("<td></td>").text(data[i].id));
+            tr.append($("<td></td>").text(i+1));
             tr.append($("<td></td>").text(data[i].cname));
             tr.append($("<td></td>")
                 .append($('<button style="margin-right:20px;" class="btn mini green" onclick="edit(' + data[i].id + ')"><i class="fa fa-edit"></i> 编辑</button>'))

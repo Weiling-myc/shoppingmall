@@ -2,7 +2,7 @@
 <html lang='cn' xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>编辑一级分类</title>
+    <title>编辑分类</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
     <meta content="" name="description"/>
     <meta content="" name="author"/>
@@ -26,7 +26,7 @@
                 <i class="fa fa-angle-right"></i>
             </li>
             <li>
-                <a href="#">编辑一级分类</a>
+                <a href="#">编辑分类</a>
             </li>
         </ul>
     </div>
@@ -35,13 +35,13 @@
             <div class="portlet-title">
                 <div class="caption">
                     <i class="fa fa-reorder"></i>
-                    编辑一级分类
+                    编辑分类
                 </div>
             </div>
             <div class="portlet-body">
                 <form action="#" class="form-horizontal">
                     <div class="control-group">
-                        <label class="control-label">一级分类ID：</label>
+                        <label class="control-label">分类ID：</label>
                         <div class="controls">
                             <input class="m-wrap media" name="id" readonly="readonly" th:value="${cate.id }"
                                    type="text"/>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label">一级分类名称：</label>
+                        <label class="control-label">分类名称：</label>
                         <div class="controls">
                             <input class="m-wrap media" name="cname" th:value="${cate.cname }" type="text"/>
                             <span class="help-inline">name</span>
