@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='cn' xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>欢迎登录商城后台管理</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <script>
+        if (window != top)
+            top.location.href = location.href;
+    </script>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-responsive.min.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/style-metro.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/style-responsive.css}" type="text/css"/>
+    <link id="style_color" rel="stylesheet" th:href="@{/css/default.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/uniform.default.css}" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" th:href="@{/css/login.css}" type="text/css"/>
+    <!-- END PAGE LEVEL STYLES -->
+    <link rel="shortcut icon" th:href="@{/image/favicon.ico}"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="login">
+<div class="logo">
+    <img alt="" th:src="@{/image/logo-big.png}"/>
+</div>
+<!-- BEGIN LOGIN -->
+<div class="content">
+    <!-- BEGIN LOGIN FORM -->
+    <form action="login.do" class="form-vertical login-form" method="post">
+        <h3 class="form-title"> 请登录</h3>
+        <div class="control-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">用户名</label>
+            <div class="controls">
+                <div class="input-icon left">
+                    <i class="icon-user"></i>
+                    <input class="m-wrap placeholder-no-fix" name="username" placeholder="用户名" type="text"/>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label visible-ie8 visible-ie9">密码</label>
+            <div class="controls">
+                <div class="input-icon left">
+                    <i class="icon-lock"></i>
+                    <input class="m-wrap placeholder-no-fix" name="password" placeholder="密码" type="password"/>
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn red " type="reset">
+                重置
+            </button>
+            <button class="btn green pull-right" id='login' type="submit">
+                登录
+            </button>
+        </div>
+    </form>
+    <!-- END LOGIN FORM -->
+</div>
+<!-- END LOGIN -->
+<!-- BEGIN COPYRIGHT -->
+<div class="copyright">
+    2019 &copy; dmh
+</div>
+<!-- END COPYRIGHT -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<script th:src="@{/js/jquery-1.10.1.min.js}" type="text/javascript"></script>
+<script th:src="@{/js/bootstrap.min.js}" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script th:src="@{/js/app.js}" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+    jQuery(document).ready(function () {
+        App.init();
+        //$("#login").click(login);
+    });
+
+    function login() {
+        var username = $("[name='username']").val();
+        var password = $("[name='password']").val();
+        if (!username || !password) {
+            alert("用户名密码不能为空！");
+            return;
+        }
+        $.ajax({
+            type: "post",
+            url: "login.do",
+            data: {"username": username, "pwd": password},
+            success: function (data) {
+                console.log(data);
+                if (data.state == 0) {
+                    window.location.href = "toIndex.html";
+                } else {
+                    alert(data.message);
+                }
+            }
+        });
+    }
+</script>
+<!-- END JAVASCRIPTS -->
+<!-- END BODY -->
+</body>
+</html>
