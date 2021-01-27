@@ -21,16 +21,12 @@
 <!--头部模块-->
 <div th:replace="mall/common::head"></div>
 <div class="layui-container" id="content">
-    <!--一级分类商品-->
     <div class="layui-row">
-        <input id="cid" th:value="${category.id}" type="hidden"/>
-        <input id="type" th:value="${category.type}" type="hidden"/>
-        <div class="layui-col-md12"><h1 class="site-h1"><i class="fa fa-gift" style="color: #FF5722;"></i>
-            &nbsp;<span th:text="${category.cname}"></span></h1></div>
-        <div style="margin-top: 10px;margin-bottom: 20px;" th:if="${category.type == 1}">
-            <span class="layui-breadcrumb" id="categorysec" lay-separator="|">
-                <!--这里显示二级分类-->
-            </span>
+        <div class="layui-col-md12">
+            <h1 class="site-h1">
+                <input id="searchTerm" th:value="${searchTerm}" type="hidden">
+            &nbsp;<span th:text="${'&quot;'+searchTerm+'&quot;'}+'的搜索结果'"></span>
+            </h1>
         </div>
     </div>
     <div class="layui-row" style="text-align: center;">
@@ -68,12 +64,7 @@
         }
 
         function loadProduct(pageindex) {
-            var cid = $("#cid").val();
-            var type = $("#type").val();
-            var url = "category.do?cid=" + cid + "&pageSize=12&pageNo=" + pageindex;
-            if (type == 2) {
-                url = "categorySec.do?csId=" + cid + "&pageSize=12&pageNo=" + pageindex;
-            }
+            var url = "search.do?searchTerm=" + $("#searchTerm").val() + "&pageSize=12&pageNo=" + pageindex;
             $.get(url, function (data) {
                 if (data.state == 0) {
                     pageNo++;

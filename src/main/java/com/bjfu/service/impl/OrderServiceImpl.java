@@ -110,6 +110,17 @@ public class OrderServiceImpl implements OrderService {
         return orders;
     }
 
+    @Override
+    public List<Order> findUserOrder(HttpServletRequest request, Pageable pageable) {
+        //从session中获取登录用户的id，查找他的订单
+        Object user = request.getSession().getAttribute("user");
+        if (user == null)
+            throw new LoginException("请登录！");
+        User loginUser = (User) user;
+        List<Order> orders = orderDao.findByUserId(loginUser.getId(), pageable);
+        return orders;
+    }
+
     /**
      * 支付
      *

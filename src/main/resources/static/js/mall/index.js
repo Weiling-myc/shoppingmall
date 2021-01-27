@@ -52,5 +52,5 @@ const InputBinding = {
 const vm = Vue.createApp(InputBinding).mount('#search-input-button');
 
 function searchMerchandise() {
-    window.location.href = "/mall/search?title=" + vm.search_content;
+    window.location.href = "/mall/search2?title=" + $("#search-input").val();
 }

@@ -83,4 +83,6 @@ public interface ProductService {
     void delById(int id);
 
     List<Product> findByTitle(String title);
+
+    List<Product> findByTitleContaining(String searchTerm, Pageable pageable);
 }

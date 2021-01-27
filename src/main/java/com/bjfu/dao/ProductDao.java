@@ -62,4 +62,6 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
     List<Product> findNew(Pageable pageable);
 
     List<Product> findByTitle(String title);
+
+    List<Product> findByTitleContaining(String searchTerm, Pageable pageable);
 }

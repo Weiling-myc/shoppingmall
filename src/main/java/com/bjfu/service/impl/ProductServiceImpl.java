@@ -108,4 +108,9 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> findByTitle(String title) {
         return productDao.findByTitle(title);
     }
+
+    @Override
+    public List<Product> findByTitleContaining(String searchTerm, Pageable pageable) {
+        return productDao.findByTitleContaining(searchTerm.trim(), pageable);
+    }
 }

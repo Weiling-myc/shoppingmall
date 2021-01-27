@@ -5,6 +5,8 @@ import com.bjfu.entity.OrderItem;
 import com.bjfu.entity.pojo.ResultBean;
 import com.bjfu.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -40,6 +42,14 @@ public class OrderController {
     @ResponseBody
     public ResultBean<List<Order>> listData(HttpServletRequest request) {
         List<Order> orders = orderService.findUserOrder(request);
+        return new ResultBean<>(orders);
+    }
+
+    @RequestMapping("/list2.do")
+    @ResponseBody
+    public ResultBean<List<Order>> listData(HttpServletRequest request, int pageNo, int pageSize) {
+        Pageable pageable = PageRequest.of(pageNo, pageSize);
+        List<Order> orders = orderService.findUserOrder(request, pageable);
         return new ResultBean<>(orders);
     }
 

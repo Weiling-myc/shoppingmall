@@ -2,14 +2,18 @@ package com.bjfu.web.user;
 
 import com.bjfu.entity.Classification;
 import com.bjfu.entity.Product;
+import com.bjfu.entity.pojo.ResultBean;
 import com.bjfu.entity.vo.CarouselItemVO;
 import com.bjfu.entity.vo.MerchandiseMenuVO;
 import com.bjfu.service.ClassificationService;
 import com.bjfu.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -65,11 +69,26 @@ public class IndexController {
         return "forward:/index.html";
     }
 
+    @Deprecated
     @RequestMapping("/search")
     public String search(@RequestParam(name = "title") String title) {
         List<Product> result = productService.findByTitle(title);
         if (result.isEmpty())
             throw new RuntimeException("商品找不到了");
         return "forward:/product/get.html?id=" + result.get(0).getId();
+    }
+
+    @RequestMapping("/search2")
+    public String search2(HttpServletRequest request, String title) {
+        request.setAttribute("searchTerm", title);
+        return "mall/product/search";
+    }
+
+    @ResponseBody
+    @RequestMapping("/search.do")
+    public ResultBean<List<Product>> getSearchResult(String searchTerm, int pageNo, int pageSize) {
+        Pageable pageable = PageRequest.of(pageNo, pageSize);
+        List<Product> products = productService.findByTitleContaining(searchTerm, pageable);
+        return new ResultBean<>(products);
     }
 }

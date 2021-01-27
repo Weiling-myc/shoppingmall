@@ -77,6 +77,7 @@ public class AuthorizationFilter implements Filter {
                     || path.contains("/mall/admin/product/img/")
                     || path.endsWith("index.html")
                     || path.endsWith("classification/list.do")
+                    || path.endsWith("search.do")
                     || path.contains("product")
                     || path.contains("/mall/h2-console")) {
                 chain.doFilter(request, response);

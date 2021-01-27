@@ -91,6 +91,8 @@ public interface OrderService {
      */
     List<Order> findUserOrder(HttpServletRequest request);
 
+    List<Order> findUserOrder(HttpServletRequest request, Pageable pageable);
+
     /**
      * 支付
      *
