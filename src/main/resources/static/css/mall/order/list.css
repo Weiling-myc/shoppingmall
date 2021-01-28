@@ -44,11 +44,6 @@
     grid-area: main;
 }
 
-tbody {
-    border: none;
-}
-
-.layui-table {
+#embeded-table {
     background-color: #f5f5f5;
-    border: none;
 }
