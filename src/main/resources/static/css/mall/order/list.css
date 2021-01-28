@@ -1,0 +1,54 @@
+#header {
+    display: grid;
+    grid-template-columns: auto 120px 150px 130px;
+}
+
+.order-container {
+    display: grid;
+    grid-template-columns: auto 120px 150px 130px;
+    grid-template-rows: 25px auto;
+    grid-template-areas: "header header header header"
+                         "main price info button";
+    border: 2px #dddddd solid;
+    margin-bottom: 10px;
+}
+
+.order-container:hover {
+    border: 2px #aaaaaa solid;
+}
+
+.order-header {
+    grid-area: header;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-total {
+    grid-area: price;
+    padding-top: 10px;
+}
+
+.order-info {
+    grid-area: info;
+    padding-top: 10px;
+}
+
+.operation {
+    grid-area: button;
+    padding-top: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+tbody {
+    border: none;
+}
+
+.layui-table {
+    background-color: #f5f5f5;
+    border: none;
+}
