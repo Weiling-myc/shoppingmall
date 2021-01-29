@@ -3,6 +3,7 @@ package com.bjfu.web.admin;
 import com.bjfu.entity.Classification;
 import com.bjfu.entity.pojo.ResultBean;
 import com.bjfu.service.ClassificationService;
+import com.bjfu.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -21,6 +22,8 @@ import java.util.Map;
 public class AdminClassificationController {
     @Autowired
     private ClassificationService classificationService;
+    @Autowired
+    private ProductService productService;
 
     /**
      * 返回列表页面
@@ -105,8 +108,13 @@ public class AdminClassificationController {
     @ResponseBody
     @RequestMapping("/del.do")
     public ResultBean<Boolean> del(int id) {
-        classificationService.delById(id);
-        return new ResultBean<>(true);
+
+        if(productService.findByCsid(id)==null){
+            classificationService.delById(id);
+            return new ResultBean<>(true);
+        }else{
+            return new ResultBean<>("类型下还有商品，无法删除类型");
+        }
     }
 
     @RequestMapping("/list.do")

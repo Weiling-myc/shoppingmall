@@ -51,7 +51,7 @@
                     <div class="control-group">
                         <label class="control-label">用户名称：</label>
                         <div class="controls">
-                            <input class="m-wrap media" name="username" th:value="${user.username }" type="text"/>
+                            <input readonly="readonly" class="m-wrap media" name="username" th:value="${user.username }" type="text"/>
                             <span class="help-inline">username</span>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="control-group">
                         <label class="control-label">密码：</label>
                         <div class="controls">
-                            <input class="m-wrap media" name="password" th:value="${user.password }" type="text"/>
+                            <input class="m-wrap media" readonly="readonly" name="password" th:value="${user.password }" type="password"/>
                             <span class="help-inline">password</span>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
     });
 
     function update() {
-        if (!confirm("确定更新改用户信？")) {
+        if (!confirm("确定更新改用户信息？")) {
             return;
         }
         $.ajax({
